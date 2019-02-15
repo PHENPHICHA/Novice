@@ -1,10 +1,10 @@
+import java.util.ArrayList;
 
-public Class Bag{
-
-private Arraylist<item> item;
-private limit;
-public Bag(){
-Item = new Arraylist<item>();
-Limit = 10;
-}
+public class Bag {
     
+    private Arraylist<item> item;
+    public Bag(){
+    Item = new Arraylist<item>();
+    limit = 10;
+    }
+}
