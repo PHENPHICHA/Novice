@@ -10,14 +10,18 @@ public class Novice {
         this.level = 1;
         this.exp = 0;
         this.hp = 0;
+        this.name = "namwan";
     }
-    
+   
     public void showInfo() {
+
         Novice novice = new Novice("100");
         System.out.println();
         System.out.println("Level = " + this.level);
         System.out.println("Exp = " + this.exp);
         System.out.println("HP = " + this.hp);
     }
-
+    public void addItem(String itemName) {
+        this.bag.addItem(itemName);
+    }
 }
