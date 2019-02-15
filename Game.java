@@ -11,7 +11,6 @@ public class Game{
         System.out.println("Welcome to Game!!");
         System.out.print("Enter your name: ");
         String name = input.nextLine();
-         
         eat = true;
         eater = true;
         
@@ -51,7 +50,7 @@ public class Game{
                                 System.out.println("..you added apple..");
                             }
                             if (num == 0) {
-                                eat = false;
+                                eater = false;
                                 System.out.println("Exit");
                             }
                 }
@@ -60,9 +59,9 @@ public class Game{
                     novice.showItem();
                 }
                 if (enter == 0) {
-                    eater = false;
+                    eat = false;
                     System.out.println();
-                    System.out.print("Good Bye");
+                    System.out.println("Good Bye");
                 }
         }
     }
