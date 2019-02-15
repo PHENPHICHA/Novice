@@ -8,21 +8,21 @@ public class Game{
         Scanner input = new Scanner(System.in);
         Novice novice = new Novice("100");
        
-
+        System.out.println("Welcome to Game!!");
         System.out.print("Enter your name: ");
         String name = input.nextLine();
-        System.out.println("Welcome to Game!!" + " " + name);
          
         eat = true;
         eater = true;
         
         while (eat){
             System.out.println();
-            System.out.println("Menu");
+            System.out.println("Select Menu");
             System.out.println("1: Show Info");
             System.out.println("2: Add Items");
             System.out.println("3: Show My Items");
             System.out.println("0: Exit");
+            System.out.println();
             System.out.print("Enter the number: ");
     
             int enter = input.nextInt();
@@ -40,12 +40,15 @@ public class Game{
 
                             if (num == 1) {
                                 novice.addItem("water");
+                                System.out.println("..you added water..");
                             }
                             if (num == 2) {
                                 novice.addItem("drug");
+                                System.out.println("..you added drug..");
                             }
                             if (num == 3) {
                                 novice.addItem("apple");
+                                System.out.println("..you added apple..");
                             }
                             if (num == 0) {
                                 eat = false;
@@ -53,7 +56,7 @@ public class Game{
                             }
                 }
                 if (enter == 3) {
-                    System.out.println("My Item : ");
+                    System.out.println("My Item: ");
                     novice.showItem();
                 }
                 if (enter == 0) {
