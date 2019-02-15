@@ -8,7 +8,7 @@ public class Game{
         Scanner input = new Scanner(System.in);
         Novice novice = new Novice("100");
        
-        System.out.println("Welcome to Game!!");
+        System.out.println("---Welcome to Game!!---");
         System.out.print("Enter your name: ");
         String name = input.nextLine();
         eat = true;
@@ -39,15 +39,15 @@ public class Game{
 
                             if (num == 1) {
                                 novice.addItem("water");
-                                System.out.println("..you added water..");
+                                System.out.println("..you added Water..");
                             }
                             if (num == 2) {
                                 novice.addItem("drug");
-                                System.out.println("..you added drug..");
+                                System.out.println("..you added Drug..");
                             }
                             if (num == 3) {
                                 novice.addItem("apple");
-                                System.out.println("..you added apple..");
+                                System.out.println("..you added Apple..");
                             }
                             if (num == 0) {
                                 eater = false;
@@ -61,7 +61,7 @@ public class Game{
                 if (enter == 0) {
                     eat = false;
                     System.out.println();
-                    System.out.println("Good Bye");
+                    System.out.println("Good Bye!!");
                 }
         }
     }

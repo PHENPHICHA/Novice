@@ -14,7 +14,7 @@ public class Novice {
         this.name = "namwan";
     }
     public void upExp() {
-        exp = this.exp + 1;
+        exp = this.exp + 10;
     }
 
     public void upLevel() {

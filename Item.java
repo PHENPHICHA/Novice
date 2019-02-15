@@ -20,7 +20,7 @@ public class Item {
         }
     }
     public void showName() {
-        System.out.println("Item: " + this.name);
+        System.out.println("#Item: " + this.name);
         System.out.println("Hp: " + this.hp);
         System.out.println("Exp: " + this.exp);
         
